@@ -132,7 +132,7 @@ header {
   font-weight: bolder;
   letter-spacing: 3px;
 
-  animation: fromleft2 1s ease;
+  animation: fromleft2 1.5s ease;
 
   margin-top: 20px;
 }
@@ -155,17 +155,19 @@ header {
 .card {
   background: rgba(30, 30, 30, 0.8);
   border: 1px solid rgba(255, 255, 255, 0.25);
+
   height: 110px;
-  width: 200px;
+  width: 230px;
   margin-top: 30px;
   margin-bottom: 40px;
+  padding-bottom: 18px;
 
   border-radius: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 
-  animation: card1 1s ease;
+  animation: card1 1.5s ease;
 
   transition: 0.3s;
 }
@@ -246,9 +248,9 @@ header {
 }
 
 .pic {
-  margin-top: 100px;
+  margin-top: 80px;
   background-color: black;
-  min-height: 70vh;
+  min-height: 80vh;
   width: 70%;
   border-radius: 30px;
 
@@ -267,7 +269,8 @@ header {
   border: 1px solid #445c3a;
   box-shadow: 0 0 80px #445c3a;
 
-  background-image: url("james.jpg");
+  background-image: url("incredible\ james.jpg");
+  object-fit: fill;
 }
 
 .Fb {
@@ -341,7 +344,7 @@ header {
 @keyframes card1 {
   from {
     opacity: 0;
-    transform: translateY(-40px);
+    transform: translateY(-60px);
   }
   to {
     opacity: 1;
@@ -369,9 +372,9 @@ section {
 }
 
 .picture {
-  margin-top: 100px;
+  margin-top: 80px;
   background-color: black;
-  min-height: 70vh;
+  min-height: 80vh;
   width: 70%;
   border-radius: 30px;
 
