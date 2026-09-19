@@ -117,13 +117,17 @@ header {
 }
 
 .welcome {
-  font-size: 25px;
-  font-family: "Marvel", impact;
-  font-weight: bolder;
+  font-size: 20px;
+  font-family: impact;
+  letter-spacing: 1.9px;
 
   animation: appear2 1.5s ease;
 
   color: white;
+}
+
+span {
+  color: #4e6843;
 }
 
 .message {
@@ -266,7 +270,7 @@ header {
 
 .pic:hover {
   transform: scale(1.04);
-  border: 1px solid #445c3a;
+  border: 3px solid #445c3a;
   box-shadow: 0 0 80px #445c3a;
 
   background-image: url("incredible\ james.jpg");
@@ -357,12 +361,17 @@ section {
   background-color: black;
 }
 
-.container {
+.container-2 {
   display: flex;
+
+  background: radial-gradient(
+    circle 400px at 100% 50%,
+    #445c3a85,
+    transparent 100%
+  );
 }
 
 .left-content {
-  background-color: red;
   min-height: 100vh;
   flex: 1;
 
@@ -373,7 +382,6 @@ section {
 
 .picture {
   margin-top: 80px;
-  background-color: black;
   min-height: 80vh;
   width: 70%;
   border-radius: 30px;
@@ -383,13 +391,26 @@ section {
   background-size: cover;
   background-repeat: no-repeat;
 
-  animation: appear 3s ease;
+  animation: appear3 5s linear 5ms;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
 
-  transition: 0.3s;
+  transition: 1s;
+}
+
+@keyframes appear3 {
+  from {
+    opacity: 0;
+    transform: translateY(40px) scale(0.5);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
 }
 
 .right-content {
-  background-color: blue;
   min-height: 100vh;
   flex: 1.7;
 
@@ -399,4 +420,116 @@ section {
 }
 
 .information {
+  margin-top: 100px;
+}
+
+.information h1 {
+  color: #445c3a;
+  font-size: 50px;
+  text-align: center;
+
+  font-family: impact;
+  letter-spacing: 1.5px;
+
+  animation: appear4 5s linear 5ms;
+  animation-timeline: view();
+  animation-range: entry 0% cover 60%;
+}
+
+@keyframes appear4 {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.information p {
+  color: lightgray;
+  font-family: "Marvel", impact;
+  font-weight: bolder;
+  letter-spacing: 1px;
+
+  line-height: 35px;
+  font-size: larger;
+}
+
+.mylocation {
+  background: rgba(80, 80, 80, 0.4);
+  border: 1px solid rgba(180, 180, 180, 0.25);
+  backdrop-filter: blur(20px), saturate(150%);
+  -webkit-backdrop-filter: blur(20px), saturate(150%);
+
+  width: 80%;
+  margin-right: 75px;
+  margin-top: 20px;
+  margin-bottom: 29px;
+
+  padding: 20px;
+  border-radius: 20px;
+
+  display: flex;
+}
+
+.mylocation h1 {
+  font-family: impact;
+  letter-spacing: 1px;
+  color: white;
+}
+
+.mylocation p {
+  font-family: "Marvel", impact;
+  font-weight: 900;
+  color: lightgray;
+}
+
+.address {
+  margin-left: 25px;
+}
+
+.phone {
+  background: rgba(80, 80, 80, 0.4);
+  border: 1px solid rgba(180, 180, 180, 0.25);
+  backdrop-filter: blur(20px), saturate(150%);
+  -webkit-backdrop-filter: blur(20px), saturate(150%);
+
+  width: 80%;
+  margin-right: 75px;
+
+  padding: 20px;
+  border-radius: 20px;
+
+  display: flex;
+}
+
+.phone h1 {
+  font-family: impact;
+  letter-spacing: 1px;
+  color: white;
+}
+
+.number {
+  margin-left: 25px;
+}
+
+.number p {
+  font-family: "Marvel", impact;
+  font-weight: 900;
+  color: lightgray;
+}
+
+.mylocation img,
+.phone img {
+  height: 50px;
+}
+
+.picture {
+  background-image: url("jamespogi.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
