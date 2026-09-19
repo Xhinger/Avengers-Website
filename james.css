@@ -16,7 +16,7 @@ html {
 
 .intro {
   background-color: black;
-  min-height: 100vh;
+  min-height: 100dvh;
 }
 
 header {
@@ -95,7 +95,7 @@ header {
 }
 
 .section {
-  min-height: 100vh;
+  min-height: 100dvh;
   flex: 1.7;
 
   display: flex;
@@ -357,22 +357,20 @@ span {
 }
 
 section {
-  min-height: 100vh;
+  min-height: 100dvh;
   background-color: black;
 }
 
 .container-2 {
   display: flex;
 
-  background: radial-gradient(
-    circle 400px at 100% 50%,
-    #445c3a85,
-    transparent 100%
-  );
+  background:
+    radial-gradient(circle 400px at 100% 50%, #445c3a85, transparent 100%),
+    radial-gradient(circle 300px at 50% 50%, #445c3a8c, transparent 100%);
 }
 
 .left-content {
-  min-height: 100vh;
+  min-height: 100dvh;
   flex: 1;
 
   display: flex;
@@ -411,7 +409,7 @@ section {
 }
 
 .right-content {
-  min-height: 100vh;
+  min-height: 100dvh;
   flex: 1.7;
 
   display: flex;
@@ -439,7 +437,7 @@ section {
 @keyframes appear4 {
   from {
     opacity: 0;
-    transform: translateY(40px);
+    transform: translateY(-200px);
   }
 
   to {
@@ -454,8 +452,27 @@ section {
   font-weight: bolder;
   letter-spacing: 1px;
 
+  width: 100%;
+  max-width: 850px;
+
   line-height: 35px;
   font-size: larger;
+
+  animation: appear5 2s linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 60%;
+}
+
+@keyframes appear5 {
+  from {
+    opacity: 0;
+    transform: translateX(80px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .mylocation {
@@ -472,23 +489,50 @@ section {
   padding: 20px;
   border-radius: 20px;
 
+  animation: frombot 2s linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
+
+  transition: 0.3s;
+
   display: flex;
+}
+
+.mylocation:hover {
+  transform: scale(1.04);
+  border: 1px solid #445c3a;
+  box-shadow: 0 0 40px #445c3a;
+
+  background-color: rgba(0, 128, 0, 0.171);
 }
 
 .mylocation h1 {
   font-family: impact;
   letter-spacing: 1px;
-  color: white;
+  color: #557348;
 }
 
 .mylocation p {
   font-family: "Marvel", impact;
+  font-size: 20px;
   font-weight: 900;
   color: lightgray;
 }
 
 .address {
   margin-left: 25px;
+}
+
+@keyframes frombot {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .phone {
@@ -503,13 +547,27 @@ section {
   padding: 20px;
   border-radius: 20px;
 
+  animation: frombot 2s linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 20%;
+
+  transition: 0.3s;
+
   display: flex;
+}
+
+.phone:hover {
+  transform: scale(1.04);
+  border: 1px solid #445c3a;
+  box-shadow: 0 0 40px #445c3a;
+
+  background-color: rgba(0, 128, 0, 0.171);
 }
 
 .phone h1 {
   font-family: impact;
   letter-spacing: 1px;
-  color: white;
+  color: #557348;
 }
 
 .number {
@@ -518,6 +576,7 @@ section {
 
 .number p {
   font-family: "Marvel", impact;
+  font-size: 20px;
   font-weight: 900;
   color: lightgray;
 }
