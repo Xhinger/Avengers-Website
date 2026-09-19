@@ -286,6 +286,10 @@ span {
   transition: 0.3s;
 }
 
+.image img:hover {
+  transform: scale(1.2);
+}
+
 @keyframes fromtop {
   from {
     transform: translateY(-100px);
