@@ -580,11 +580,7 @@ section {
   color: #557348;
 }
 
-.number {
-  margin-left: 25px;
-}
-
-.number p {
+.phone p {
   font-family: "Marvel", impact;
   font-size: 20px;
   font-weight: 900;
@@ -601,4 +597,8 @@ section {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.info-2 {
+  margin-left: 25px;
 }
