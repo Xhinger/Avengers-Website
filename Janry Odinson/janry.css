@@ -77,7 +77,7 @@ header {
 .links a {
   text-decoration: none;
   color: white;
-  margin: 0 -200%;
+  margin: 0 0%;
 
   padding: 13px;
   padding-left: 20px;
@@ -295,7 +295,7 @@ span {
   width: 70%;
   border-radius: 30px;
 
-  background-image: url("captain\ ass.jpg");
+  background-image: url("thor.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -310,7 +310,7 @@ span {
   border: 3px solid #4cc9ff;
   box-shadow: 0 0 80px #4cc9ff;
 
-  background-image: url("captain\ loma.jpg");
+  background-image: url("thor1.jpg");
   object-fit: fill;
 }
 
@@ -426,7 +426,7 @@ section {
   width: 70%;
   border-radius: 30px;
 
-  background-image: url("jeecee.jpg");
+  background-image: url("godofsleep.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -532,7 +532,7 @@ section {
   width: 80%;
   margin-right: 75px;
   margin-top: 25px;
-  margin-bottom: 28px;
+  margin-bottom: 25px;
 
   padding: 20px;
   border-radius: 20px;

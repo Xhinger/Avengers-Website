@@ -71,7 +71,7 @@ header {
 .links a {
   text-decoration: none;
   color: white;
-  margin: 0 -200%;
+  margin: 0 0%;
 
   padding: 13px;
   padding-left: 20px;
@@ -135,6 +135,8 @@ span {
   font-family: "Marvel", impact;
   font-weight: bolder;
   letter-spacing: 3px;
+
+  font-size: 18px;
 
   animation: fromleft2 1.5s ease;
 
