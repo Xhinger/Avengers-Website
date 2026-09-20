@@ -412,7 +412,7 @@ section {
 }
 
 .left-content {
-  min-height: 100dvh;
+  min-height: 105dvh;
   flex: 1;
 
   display: flex;
@@ -506,7 +506,7 @@ section {
   line-height: 35px;
   font-size: 17px;
 
-  animation: appear5 2s linear;
+  animation: appear5 2s ease;
   animation-timeline: view();
   animation-range: entry 0% cover 60%;
 }
@@ -514,7 +514,7 @@ section {
 @keyframes appear5 {
   from {
     opacity: 0;
-    transform: translateX(80px);
+    transform: translateX(-80px);
   }
 
   to {
@@ -531,8 +531,8 @@ section {
 
   width: 80%;
   margin-right: 75px;
-  margin-top: 20px;
-  margin-bottom: 18px;
+  margin-top: 25px;
+  margin-bottom: 28px;
 
   padding: 20px;
   border-radius: 20px;
