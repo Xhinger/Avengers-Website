@@ -129,8 +129,8 @@ header {
   font-size: 75px;
   font-family: impact;
   background:
-    radial-gradient(circle at 0% 0, #8be7ff, transparent 80%),
-    radial-gradient(circle at 100% 0, #d6a84f, transparent 80%);
+    radial-gradient(circle at 0% 0, #8be8ff95, transparent 80%),
+    radial-gradient(circle at 100% 0, #d6a94fbb, transparent 80%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
