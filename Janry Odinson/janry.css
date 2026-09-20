@@ -27,6 +27,8 @@ header {
 
   background: rgba(40, 40, 40, 0.9);
 
+  border: 1px solid #d6a84f;
+
   backdrop-filter: blur(20px), saturate(150%);
   -webkit-backdrop-filter: blur(20px), saturate(150%);
 
@@ -200,6 +202,8 @@ span {
   margin-bottom: 40px;
   padding-bottom: 18px;
 
+  border: 1px solid #d6a84f;
+
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -234,7 +238,7 @@ span {
 
 .btn1 {
   text-decoration: none;
-  background-color: #4cc9ff;
+  background-color: #d6a84f;
   color: black;
   font-size: 20px;
   font-weight: 900;
@@ -251,7 +255,7 @@ span {
 }
 
 .btn1:hover {
-  box-shadow: 0 0 40px #4cc9ff;
+  box-shadow: 0 0 40px #d6a84f;
 }
 
 .btn {
@@ -303,8 +307,8 @@ span {
 
 .pic:hover {
   transform: scale(1.04);
-  border: 3px solid #3172c18f;
-  box-shadow: 0 0 80px #3172c18f;
+  border: 3px solid #4cc9ff;
+  box-shadow: 0 0 80px #4cc9ff;
 
   background-image: url("captain\ loma.jpg");
   object-fit: fill;
@@ -403,7 +407,8 @@ section {
 
   background:
     radial-gradient(circle 400px at 100% 50%, #4cc9ff4c, transparent 100%),
-    radial-gradient(circle 300px at 50% 50%, #d6a94f56, transparent 100%);
+    radial-gradient(circle 300px at 50% 50%, #d6a94f56, transparent 100%),
+    radial-gradient(circle 400px at 0% 50%, #d6a94f5f, transparent 100%);
 }
 
 .left-content {
@@ -520,7 +525,7 @@ section {
 
 .mylocation {
   background: rgba(80, 80, 80, 0.4);
-  border: 1px solid rgba(180, 180, 180, 0.25);
+  border: 1px solid #d6a84f;
   backdrop-filter: blur(20px), saturate(150%);
   -webkit-backdrop-filter: blur(20px), saturate(150%);
 
@@ -586,7 +591,7 @@ section {
 
 .phone {
   background: rgba(80, 80, 80, 0.4);
-  border: 1px solid rgba(180, 180, 180, 0.25);
+  border: 1px solid #d6a84f;
   backdrop-filter: blur(20px), saturate(150%);
   -webkit-backdrop-filter: blur(20px), saturate(150%);
 
