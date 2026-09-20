@@ -156,14 +156,17 @@ span {
 }
 
 .message {
-  color: lightgray;
+  color: darkgray;
   font-family: "Marvel", impact;
-  font-weight: bolder;
+  font-weight: 600;
   letter-spacing: 3px;
+  font-size: 18px;
+
+  margin-left: 2%;
 
   display: flex;
   justify-content: end;
-  text-align: end;
+  text-align: start;
 
   animation: fromleft2 2s ease;
 
@@ -288,7 +291,7 @@ span {
   width: 70%;
   border-radius: 30px;
 
-  background-image: url("");
+  background-image: url("captain\ ass.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -303,7 +306,7 @@ span {
   border: 3px solid #3172c18f;
   box-shadow: 0 0 80px #3172c18f;
 
-  background-image: url("");
+  background-image: url("captain\ loma.jpg");
   object-fit: fill;
 }
 
@@ -412,13 +415,13 @@ section {
   align-items: center;
 }
 
-.picture {
+.picture2 {
   margin-top: 150px;
-  min-height: 80vh;
+  min-height: 70vh;
   width: 70%;
   border-radius: 30px;
 
-  background-image: url("");
+  background-image: url("jeecee.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -430,7 +433,7 @@ section {
   transition: 1s;
 }
 
-.picture:hover {
+.picture2:hover {
   transform: scale(1.04);
   border: 3px solid #3172c18f;
   box-shadow: 0 0 80px #3172c18f;
@@ -496,7 +499,7 @@ section {
   max-width: 850px;
 
   line-height: 35px;
-  font-size: larger;
+  font-size: 17px;
 
   animation: appear5 2s linear;
   animation-timeline: view();
