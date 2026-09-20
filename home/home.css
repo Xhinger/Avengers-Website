@@ -4,9 +4,21 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+.aven {
+  color: red;
+}
+
+.assem {
+  color: red;
+}
+
 .container {
   width: 100%;
-  height: 100vh;
+  height: 100dvh;
   background: rgba(0, 0, 0, 0.1);
 
   display: flex;
@@ -18,12 +30,40 @@
   z-index: 1;
 }
 
+video {
+  height: 100vh;
+}
+
 .content a {
   text-decoration: none;
   color: white;
 
   font-size: 30px;
   font-family: Avengeance Heroic Avenger;
+  transition: 0.3s;
+
+  position: relative;
+}
+
+.content a::after {
+  content: "";
+  position: absolute;
+
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: red;
+  transition: width 0.3s ease;
+}
+
+.content a:hover::after {
+  width: 100%;
+}
+
+.content a:hover {
+  transform: scale(1.4);
+  color: red;
 }
 
 .content h1 {
@@ -42,7 +82,7 @@
 }
 
 .content-intro {
-  height: 100vh;
+  height: 100dvh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -88,7 +128,7 @@
 }
 
 .links a:hover {
-  transform: scale(1.3);
+  color: red;
 }
 
 .links li {
@@ -104,9 +144,15 @@ header {
   position: absolute;
   z-index: 2;
 
-  background: rgba(0, 0, 0, 0.5);
-  padding: 10px;
+  background: rgba(40, 40, 40, 0.25);
+  backdrop-filter: blur(20px), saturate(150%);
+  -webkit-backdrop-filter: blur(20px), saturate(150%);
+
+  padding: 5px;
   border-radius: 20px;
+
+  position: fixed;
+  top: 0;
 }
 
 header img {
@@ -118,4 +164,168 @@ header img {
 
 header img:hover {
   transform: scale(1.08);
+}
+
+.section {
+  background-color: black;
+  min-height: 100dvh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutus {
+  text-align: center;
+}
+
+.aboutus h1 {
+  font-size: 95px;
+  color: white;
+  font-family: Avengeance Heroic Avenger;
+}
+
+.para1 {
+  color: rgba(255, 255, 255, 0.58);
+  font-family: Avengeance Heroic Avenger;
+
+  width: 100%;
+  max-width: 1000px;
+
+  word-spacing: 2px;
+  font-size: 26px;
+}
+
+.para2 {
+  color: rgba(255, 255, 255, 0.58);
+  font-family: Avengeance Heroic Avenger;
+
+  width: 100%;
+  max-width: 1000px;
+
+  word-spacing: 2px;
+  font-size: 26px;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-evenly;
+
+  margin-top: 30px;
+}
+
+.percentage {
+  color: rgba(255, 255, 255, 0.58);
+  font-family: Avengeance Heroic Avenger;
+}
+
+.percentage p {
+  font-size: 17px;
+}
+
+.heroes {
+  min-height: 100dvh;
+  background-color: black;
+}
+
+.heroes h1 {
+  text-align: center;
+  font-size: 70px;
+  color: white;
+  font-family: Avengeance Heroic Avenger;
+}
+
+.title {
+  word-spacing: 25px;
+  padding-top: 80px;
+}
+
+.hero-cards {
+  padding: 30px;
+  min-height: 70dvh;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+  gap: 40px;
+}
+
+.cards {
+  width: 100%;
+  max-width: 350px;
+  min-height: 450px;
+
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
+  border-radius: 20px;
+
+  transition: 0.3s ease;
+}
+
+.hero-pic img {
+  width: 100%;
+  height: 100%;
+}
+
+.hero-pic {
+  height: 230px;
+  width: 100%;
+}
+
+.hero-info {
+  flex: 1;
+
+  padding: 24px;
+}
+
+.hero-info h3 {
+  font-family: Avengeance Heroic Avenger;
+  font-size: 30px;
+  color: white;
+}
+
+.role {
+  font-family: Avengeance Heroic Avenger;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.571);
+}
+
+.hero-det {
+  font-family: Avengeance Heroic Avenger;
+  font-size: 24px;
+  color: white;
+
+  margin-top: 17px;
+}
+
+.garalde {
+  color: green;
+}
+
+.incredible {
+  color: green;
+}
+
+.cards a {
+  text-decoration: none;
+  color: white;
+
+  text-align: end;
+  padding: 20px;
+
+  font-size: 20px;
+  word-spacing: 6px;
+  font-family: Avengeance Heroic Avenger;
+}
+
+.james {
+  transition: 0.3s;
+}
+
+.james:hover {
+  transform: scale(1.06);
+  color: green;
 }
