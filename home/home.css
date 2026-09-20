@@ -129,6 +129,7 @@ video {
 
 .links a:hover {
   color: red;
+  transform: scale(1.3);
 }
 
 .links li {
@@ -269,6 +270,12 @@ header img:hover {
   transition: 0.3s ease;
 }
 
+.cards:hover {
+  border: 1px solid red;
+  transform: scale(1.05);
+  box-shadow: 0 0 40px red;
+}
+
 .hero-pic img {
   width: 100%;
   height: 100%;
@@ -313,6 +320,45 @@ header img:hover {
   color: green;
 }
 
+.feliciano {
+  color: red;
+}
+
+.neil:hover {
+  color: red;
+  transform: scale(1.06);
+}
+
+.fel-p {
+  color: red;
+}
+
+.janry {
+  color: #8be8ff67;
+}
+
+.ben-p {
+  color: #8be8ff67;
+}
+
+.bendijo:hover {
+  color: #8be8ff67;
+  transform: scale(1.06);
+}
+
+.jeecee {
+  color: #3172c18f;
+}
+
+.jee-p {
+  color: #3172c18f;
+}
+
+.pineda:hover {
+  color: #3172c18f;
+  transform: scale(1.06);
+}
+
 .cards a {
   text-decoration: none;
   color: white;
@@ -325,7 +371,7 @@ header img:hover {
   font-family: Avengeance Heroic Avenger;
 }
 
-.james {
+.hero-cards a {
   transition: 0.3s;
 }
 
