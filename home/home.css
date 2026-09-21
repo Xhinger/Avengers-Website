@@ -513,7 +513,7 @@ header img:hover {
 
 .contactus {
   min-height: 45dvh;
-  background-color: rgb(37, 36, 36);
+  background-color: rgb(16, 15, 15);
 
   padding-top: 100px;
 
@@ -568,6 +568,21 @@ header img:hover {
 
 .website a {
   transition: 0.5s ease;
+
+  animation: fadein 1s ease;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .website a:hover {
@@ -630,6 +645,10 @@ footer {
 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+
+  animation: appear1 1s ease;
+  animation-timeline: view();
+  animation-range: entry 0% cover 70%;
 }
 
 @media (max-width: 1024px) {
