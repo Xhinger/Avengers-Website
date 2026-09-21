@@ -8,7 +8,8 @@
 
 @font-face {
   font-family: "Avengeance Heroic Avenger";
-  src: url("../home/fonts/avengeance-heroic-avenger-bold.otf") format("opentype");
+  src: url("../home/fonts/avengeance-heroic-avenger-bold.otf")
+    format("opentype");
   font-style: normal;
   font-weight: 700;
   font-display: swap;
@@ -16,7 +17,8 @@
 
 @font-face {
   font-family: "Avengeance Heroic Avenger";
-  src: url("../home/fonts/avengeance-heroic-avenger-bold-italic.otf") format("opentype");
+  src: url("../home/fonts/avengeance-heroic-avenger-bold-italic.otf")
+    format("opentype");
   font-style: italic;
   font-weight: 700;
   font-display: swap;

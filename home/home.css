@@ -34,13 +34,15 @@ html {
 
 .links button {
   border: 0;
-  padding: 13px 20px;
+  min-height: 44px;
+  padding: 10px 20px;
   border-radius: 20px;
   background: transparent;
   color: white;
   cursor: pointer;
   font-size: 20px;
   font-family: Avengeance Heroic Avenger;
+  white-space: nowrap;
   transition: 0.3s;
 }
 
@@ -661,9 +663,19 @@ body {
     gap: 12px;
   }
 
+  .links li {
+    flex-shrink: 0;
+  }
+
   .links a {
     font-size: 16px;
     margin-right: 0;
+  }
+
+  .links button {
+    min-height: 40px;
+    padding: 8px 14px;
+    font-size: 16px;
   }
 
   .content h1 {
@@ -706,20 +718,29 @@ body {
 
   .navlinks {
     align-items: center;
-    flex-direction: row;
+    justify-content: center;
     gap: 8px;
+    flex-wrap: wrap;
   }
 
   .links {
-    flex: 1;
-    justify-content: flex-end;
-    gap: 2px;
+    flex: 1 1 100%;
+    justify-content: center;
+    gap: 4px;
+    min-width: 0;
   }
 
   .links a {
     font-size: 12px;
     padding: 4px 2px;
-    text-align: center  ;
+    text-align: center;
+  }
+
+  .links button {
+    min-height: 36px;
+    min-width: 64px;
+    padding: 7px 10px;
+    font-size: 12px;
   }
 
   .content-intro {
@@ -867,28 +888,6 @@ body {
 
   header img {
     height: 42px;
-  }
-
-  .navlinks {
-    align-items: center;
-    gap: 12px;
-  }
-
-  .links {
-    flex: 1;
-    justify-content: flex-end;
-    gap: 12px;
-  }
-
-  .links a {
-    font-size: 14px;
-    margin-right: 0;
-  }
-
-  #logout {
-    min-width: 72px;
-    padding: 8px 10px;
-    font-size: 12px;
   }
 
   .content h1 {
@@ -1053,6 +1052,12 @@ body {
   }
 
   .links a {
+    font-size: 11px;
+  }
+
+  .links button {
+    min-width: 58px;
+    padding: 6px 8px;
     font-size: 11px;
   }
 
