@@ -223,7 +223,7 @@ header img:hover {
 
 .section {
   background-color: black;
-  min-height: 100dvh;
+  min-height: 120dvh;
 
   display: flex;
   justify-content: center;
@@ -329,7 +329,7 @@ header img:hover {
 }
 
 .heroes {
-  min-height: 100dvh;
+  min-height: 120dvh;
   background-color: black;
 }
 
