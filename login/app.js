@@ -32,12 +32,8 @@ loginForm.addEventListener("submit", async (e) => {
 
     localStorage.setItem("token", data.token);
     document.getElementById("title").textContent = "Loading...";
-    loginForm.addEventListener(
-      "click", function () {
-        document.getElementById("title").style.color = "green";
-      }
-    ); //Add color change to the title when login is successful
-
+    document.getElementById("title").style.color = "green";
+    //Add color change to the title when login is successful
     message.textContent = "Login Successful"; 
     setTimeout(() => {
     window.location.href = "../home/home.html";
