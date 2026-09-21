@@ -20,9 +20,13 @@
                 </ul>
         </header>
 
-        <video autoplay loop muted playsinline class="background-clip">
+        <video autoplay loop playsinline class="background-clip" id="myVideo">
             <source src="avengers video.mp4" type="video/mp4">
         </video>
+
+        <div class="mute">
+        <button id="muteBtn" type="button" aria-pressed="true">mute</button>
+        </div>
 
         <div class="content-intro">
         <div class="content">
@@ -160,6 +164,22 @@
             localStorage.removeItem("token");
             window.location.href = "../login/index.html";
         });
+
+        
+        const video = document.getElementById("myVideo");
+        const button = document.getElementById("muteBtn");
+
+        button.addEventListener("click", function() {
+        if (video.muted) {
+            video.muted = false;
+            button.innerText = "Mute";
+            button.setAttribute("aria-pressed", "false");
+        } else {
+            video.muted = true;
+            button.innerText = "Unmute";
+            button.setAttribute("aria-pressed", "true");
+        }
+    });
     </script>
     
 </body>
