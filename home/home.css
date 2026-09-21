@@ -624,7 +624,7 @@ footer {
   padding-right: 10px;
 
   background:
-    radial-gradient(circle at left, white, transparent 80%),
+    radial-gradient(circle at left, rgb(212, 209, 209), transparent 80%),
     radial-gradient(circle at right, red, transparent 80%);
 
   -webkit-background-clip: text;
