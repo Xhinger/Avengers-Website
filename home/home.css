@@ -719,6 +719,7 @@ body {
   .links a {
     font-size: 12px;
     padding: 4px 2px;
+    text-align: center  ;
   }
 
   .content-intro {
@@ -742,6 +743,7 @@ body {
 
   .stats {
     display: grid;
+    place-items: center;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
