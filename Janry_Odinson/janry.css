@@ -98,12 +98,12 @@ header {
 
 .contain-a {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 
 .image {
   display: flex;
-  justify-content: end;
+  justify-content: start;
 }
 
 .main {
@@ -143,7 +143,7 @@ header {
 
 .welcome {
   display: flex;
-  justify-content: end;
+  justify-content: start;
   font-size: 26px;
   font-family: impact;
   letter-spacing: 1.9px;
