@@ -605,6 +605,24 @@ footer {
   background-color: black;
 }
 
+.contactus h1 {
+  font-size: 60px;
+  word-spacing: 27px;
+}
+
+.contactus p {
+  margin-bottom: 100px;
+  font-size: 28px;
+
+  word-spacing: 10px;
+}
+
+.contactus p,
+.contactus h1 {
+  font-family: Avengeance Heroic Avenger;
+  color: white;
+}
+
 @media (max-width: 1024px) {
   header {
     width: 90%;
