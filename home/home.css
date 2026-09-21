@@ -48,6 +48,7 @@ html {
 
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .content {
@@ -123,7 +124,7 @@ video {
 }
 
 .content-intro {
-  height: 100dvh;
+  height: 20dvh;
   display: flex;
   justify-content: center;
   align-items: center;
