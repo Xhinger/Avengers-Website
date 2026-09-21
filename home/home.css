@@ -621,6 +621,7 @@ footer {
 .contactus h1 {
   font-family: Avengeance Heroic Avenger;
   color: white;
+  padding-top: 10px;
   padding-right: 10px;
 
   background:
@@ -788,6 +789,23 @@ footer {
     padding: 70px 5% 35px;
   }
 
+  .contactus h1 {
+    width: 100%;
+    font-size: clamp(32px, 8vw, 52px);
+    line-height: 1.15;
+    text-align: center;
+    word-spacing: 8px;
+  }
+
+  .contactus p {
+    width: 100%;
+    margin-bottom: 55px;
+    font-size: clamp(18px, 5vw, 24px);
+    line-height: 1.3;
+    text-align: center;
+    word-spacing: 3px;
+  }
+
   .website {
     flex-wrap: wrap;
     gap: 12px;
@@ -844,6 +862,17 @@ footer {
 
   .hero-pic {
     height: 180px;
+  }
+
+  .contactus h1 {
+    font-size: 29px;
+    word-spacing: 4px;
+  }
+
+  .contactus p {
+    margin-bottom: 42px;
+    font-size: 17px;
+    word-spacing: 1px;
   }
 }
 
