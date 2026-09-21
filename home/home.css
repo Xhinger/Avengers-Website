@@ -363,7 +363,7 @@ header img:hover {
 
   animation: cardapper 1s ease;
   animation-timeline: view();
-  animation-range: entry 0% cover 70%;
+  animation-range: entry 0% cover 40%;
 }
 
 @keyframes cardapper {
