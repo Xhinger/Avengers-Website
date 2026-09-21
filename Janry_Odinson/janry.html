@@ -4,30 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Avengers</title>
-    <link rel="stylesheet" href="janry.css">
-</head>
-<body>
-
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Avengers</title>
     <link href='https://fonts.googleapis.com/css?family=Marvel' rel='stylesheet'>
-    <link rel="stylesheet" href="james.css">
+    <link rel="stylesheet" href="janry.css">
 </head>
 <body>
     <div class="intro" id="home">
         <div class="radial">
         <header>
-            <a href="/home/home.html" class="janry">Home</a>
+            <a href="../home/home.html" class="janry">Home</a>
 
             <nav class="navlink">
                 <ul class="links">
-                    <li><a href="/Incredible_James/james.html">James</a></li>
-                    <li><a href="/Captin_Loma/jeecee.html">Jeecee</a></li>
-                    <li><a href="/Aaron_Man/aaron.html">NEIL</a></li>
+                    <li><a href="../Incredible_James/james.html">James</a></li>
+                    <li><a href="../Captin_Loma/jeecee.html">Jeecee</a></li>
+                    <li><a href="../Aaron_Man/aaron.html">NEIL</a></li>
                     <li><button type="button" id="logout">Logout</button></li>
                 </ul>
             </nav>
@@ -120,14 +110,11 @@
 
         </div>
     </section>
-</body>
 <script>
     document.getElementById("logout").addEventListener("click", () => {
         localStorage.removeItem("token");
         window.location.href = "../login/index.html";
     });
 </script>
-</html>
-    
 </body>
 </html>

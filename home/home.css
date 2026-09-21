@@ -40,10 +40,8 @@ html {
   color: white;
   cursor: pointer;
   font-size: 20px;
-  font-family: impact;
-  transition: 0.3s;
-
   font-family: Avengeance Heroic Avenger;
+  transition: 0.3s;
 }
 
 .links button:hover {
