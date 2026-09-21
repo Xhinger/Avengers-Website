@@ -360,6 +360,21 @@ header img:hover {
   border-radius: 20px;
 
   transition: 0.3s ease;
+
+  animation: cardapper 1s ease;
+  animation-timeline: view();
+  animation-range: entry 0% cover 70%;
+}
+
+@keyframes cardapper {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 .cards:hover {
