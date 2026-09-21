@@ -28,6 +28,7 @@
                     <li><a href="/Incredible_James/james.html">James</a></li>
                     <li><a href="/Captin_Loma/jeecee.html">Jeecee</a></li>
                     <li><a href="/Aaron_Man/aaron.html">NEIL</a></li>
+                    <li><button type="button" id="logout">Logout</button></li>
                 </ul>
             </nav>
         </header>
@@ -120,6 +121,12 @@
         </div>
     </section>
 </body>
+<script>
+    document.getElementById("logout").addEventListener("click", () => {
+        localStorage.removeItem("token");
+        window.location.href = "../login/index.html";
+    });
+</script>
 </html>
     
 </body>

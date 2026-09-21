@@ -32,6 +32,26 @@ html {
   scroll-behavior: smooth;
 }
 
+.links button {
+  border: 0;
+  padding: 13px 20px;
+  border-radius: 20px;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: impact;
+  transition: 0.3s;
+
+  font-family: Avengeance Heroic Avenger;
+}
+
+.links button:hover {
+  background-color: #e5383591;
+  color: black;
+  box-shadow: 0 0 30px #e5383591;
+}
+
 .aven {
   color: red;
 }
@@ -611,7 +631,7 @@ header img:hover {
 footer p {
   text-align: center;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  color: rgb(88, 85, 85);
+  color: rgba(88, 85, 85, 0.888);
 
   font-size: 18px;
 }
@@ -777,7 +797,6 @@ body {
     min-height: 100px;
     gap: 18px;
   }
-  background-color: black;
 }
 
 .contactus h1 {
@@ -864,6 +883,12 @@ body {
   .links a {
     font-size: 14px;
     margin-right: 0;
+  }
+
+  #logout {
+    min-width: 72px;
+    padding: 8px 10px;
+    font-size: 12px;
   }
 
   .content h1 {
