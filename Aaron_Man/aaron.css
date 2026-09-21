@@ -638,11 +638,16 @@ section {
 
 .mylocation img,
 .phone img {
-  height: 50px;
+  height: 40px;
+}
+
+.phone img {
+  margin-top: 10px;
+  margin-right: 10px;
 }
 
 .mylocation img {
-  margin-top: 20px;
+  margin-top: 10px;
   margin-left: 20px;
 }
 
