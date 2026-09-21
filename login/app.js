@@ -1,4 +1,4 @@
-const API_URL = "https://login-system-sxtc.onrender.com";
+const API_URL = "http://localhost:5000";
 
 const loginForm = document.getElementById("loginForm");
 const registerForm = document.getElementById("registerForm");
