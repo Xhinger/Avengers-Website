@@ -25,10 +25,10 @@ header {
   justify-content: space-between;
   align-items: center;
 
-  background: rgba(40, 40, 40, 0.9);
+  background: rgba(40, 40, 40, 0.1);
 
-  backdrop-filter: blur(20px), saturate(150%);
-  -webkit-backdrop-filter: blur(20px), saturate(150%);
+  backdrop-filter: blur(10px) saturate(150%);
+  -webkit-backdrop-filter: blur(10px) saturate(150%);
 
   width: 80%;
   padding: 11px;
@@ -401,9 +401,11 @@ section {
 .container-2 {
   display: flex;
 
-  background:
-    radial-gradient(circle 400px at 100% 50%, #3172c18f, transparent 100%),
-    radial-gradient(circle 300px at 50% 50%, #c1503169, transparent 100%);
+  background: radial-gradient(
+    circle 400px at 50% 50%,
+    #3172c18f,
+    transparent 100%
+  );
 }
 
 .left-content {
@@ -645,4 +647,269 @@ section {
 
 .logo img {
   margin-left: 200px;
+}
+
+/* Responsive layout */
+body {
+  overflow-x: hidden;
+}
+.mylocation,
+.phone {
+  align-items: center;
+  gap: 20px;
+}
+.logo {
+  flex: 0 0 auto;
+}
+.logo img {
+  max-width: 64px;
+  height: auto;
+  margin: 0;
+}
+.main {
+  width: min(1400px, 100%);
+  margin: 0 auto;
+  padding: 90px 4vw 40px;
+  gap: 2vw;
+}
+.main > *,
+.container-2 > * {
+  min-width: 0;
+}
+.info {
+  width: 100%;
+  padding: 0 2vw;
+}
+.name {
+  font-size: clamp(42px, 5vw, 75px);
+  line-height: 1.05;
+}
+.message {
+  margin-left: 0;
+  line-height: 1.5;
+}
+.container {
+  flex-wrap: wrap;
+  gap: 14px;
+}
+.card {
+  width: clamp(145px, 18vw, 230px);
+}
+.container-2 {
+  width: min(1400px, 100%);
+  margin: 0 auto;
+  padding: 40px 4vw;
+  gap: 3vw;
+}
+.right-content,
+.left-content {
+  min-height: auto;
+}
+.information {
+  width: 100%;
+  margin-top: 70px;
+}
+.information p {
+  padding: 0 10px;
+  line-height: 1.7;
+}
+.mylocation,
+.phone {
+  width: 100%;
+  margin-right: 0;
+}
+
+@media (max-width: 1000px) {
+  header {
+    width: calc(100% - 32px);
+    margin: 10px 16px;
+  }
+  .links {
+    gap: 10px;
+  }
+  .links a {
+    font-size: 16px;
+    padding: 8px;
+  }
+  .main,
+  .container-2 {
+    flex-direction: column;
+  }
+  .section {
+    min-height: auto;
+    padding: 30px 0 60px;
+    order: 1;
+  }
+  .aside {
+    order: 2;
+    min-height: auto;
+  }
+  .pic {
+    width: min(560px, 90%);
+    min-height: min(70vh, 620px);
+    margin: 10px auto 50px;
+  }
+  .container {
+    justify-content: center;
+  }
+  .contain-a,
+  .image {
+    justify-content: center;
+  }
+  .container-2 {
+    padding: 30px 16px 70px;
+  }
+  .left-content {
+    order: 2;
+  }
+  .right-content {
+    order: 1;
+  }
+  .picture,
+  .picture2 {
+    width: min(560px, 90%);
+    min-height: 520px;
+    margin: 30px auto 0;
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    padding: 8px;
+  }
+  .janry,
+  .james,
+  .jeecee,
+  .neil {
+    font-size: 28px;
+  }
+  .links a {
+    font-size: 12px;
+    padding: 5px;
+  }
+  .welcome {
+    font-size: 20px;
+  }
+  .name {
+    font-size: clamp(34px, 11vw, 52px);
+  }
+  .message {
+    font-size: 17px;
+    letter-spacing: 1px;
+  }
+  .container {
+    gap: 10px;
+  }
+  .card {
+    width: calc(50% - 5px);
+    height: 96px;
+  }
+  .card h1 {
+    font-size: 34px;
+  }
+  .card p,
+  .btn,
+  .btn1 {
+    font-size: 16px;
+  }
+  .btn,
+  .btn1 {
+    margin: 0 4px 12px;
+    padding: 10px 18px;
+  }
+  .Fb {
+    height: 42px;
+    margin: 20px 0 0;
+  }
+  .information {
+    margin-top: 30px;
+  }
+  .information h1 {
+    font-size: 38px;
+  }
+  .information p,
+  .mylocation p,
+  .phone p {
+    font-size: 16px;
+    line-height: 1.55;
+  }
+  .mylocation,
+  .phone {
+    align-items: center;
+    padding: 14px;
+  }
+  .address,
+  .number,
+  .info-2 {
+    margin-left: 0;
+  }
+  .mylocation h1,
+  .phone h1 {
+    font-size: 22px;
+  }
+  .mylocation img,
+  .phone img {
+    height: 38px;
+    margin: 0;
+  }
+  .picture,
+  .picture2 {
+    min-height: 420px;
+  }
+}
+
+@media (max-width: 430px) {
+  header {
+    width: calc(100% - 20px);
+    margin: 8px 10px;
+    padding: 6px;
+  }
+  .jeecee {
+    font-size: 24px;
+    margin: 0 8px;
+  }
+  .links {
+    gap: 0;
+    justify-content: flex-end;
+  }
+  .links a {
+    font-size: 10px;
+    padding: 5px 3px;
+  }
+  .main {
+    padding: 92px 12px 30px;
+  }
+  .section,
+  .info {
+    width: 100%;
+  }
+  .info {
+    padding: 0;
+  }
+  .welcome,
+  .name {
+    justify-content: center;
+    text-align: center;
+  }
+  .message {
+    text-align: center;
+  }
+  .card {
+    min-width: 0;
+  }
+  .contain-a {
+    flex-wrap: wrap;
+  }
+  .image {
+    min-height: 48px;
+  }
+  .mylocation,
+  .phone {
+    gap: 10px;
+  }
+  .address p,
+  .number p,
+  .info-2 p {
+    overflow-wrap: anywhere;
+  }
 }

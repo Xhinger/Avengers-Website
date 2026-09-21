@@ -611,13 +611,172 @@ header img:hover {
 footer p {
   text-align: center;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  color: rgba(255, 255, 255, 0.402);
+  color: rgb(88, 85, 85);
 
   font-size: 18px;
 }
 
 footer {
   padding: 14px;
+  background-color: black;
+}
+
+/* Responsive layout */
+body {
+  overflow-x: hidden;
+}
+
+@media (max-width: 900px) {
+  header {
+    width: calc(100% - 32px);
+    max-width: none;
+    left: 16px;
+    top: 10px;
+    padding: 6px 12px;
+  }
+
+  header img {
+    height: 48px;
+  }
+
+  .links {
+    gap: 12px;
+  }
+
+  .links a {
+    font-size: 16px;
+    margin-right: 0;
+  }
+
+  .content h1 {
+    font-size: clamp(58px, 13vw, 100px);
+  }
+
+  .aboutus {
+    width: min(100% - 32px, 1000px);
+  }
+
+  .aboutus h1,
+  .heroes h1 {
+    font-size: clamp(44px, 9vw, 80px);
+  }
+
+  .para1,
+  .para2 {
+    font-size: clamp(18px, 2.4vw, 26px);
+  }
+
+  .hero-cards {
+    padding: 24px 16px;
+    gap: 24px;
+  }
+
+  .cards {
+    max-width: 320px;
+  }
+
+  .contactus {
+    padding: 70px 16px 0;
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    min-height: 100svh;
+  }
+
+  .navlinks {
+    align-items: center;
+    flex-direction: row;
+    gap: 8px;
+  }
+
+  .links {
+    flex: 1;
+    justify-content: flex-end;
+    gap: 2px;
+  }
+
+  .links a {
+    font-size: 12px;
+    padding: 4px 2px;
+  }
+
+  .content-intro {
+    height: 28dvh;
+    padding: 0 16px;
+  }
+
+  .content a {
+    font-size: 24px;
+  }
+
+  .section {
+    min-height: auto;
+    padding: 72px 16px;
+  }
+
+  .aboutus h1,
+  .heroes h1 {
+    font-size: clamp(36px, 12vw, 58px);
+  }
+
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .percentage h1 {
+    font-size: 42px;
+  }
+
+  .percentage p {
+    font-size: 14px;
+  }
+
+  .title {
+    padding-top: 60px;
+  }
+
+  .hero-cards {
+    padding: 24px 16px 50px;
+  }
+
+  .cards {
+    min-height: 0;
+  }
+
+  .hero-pic {
+    height: 210px;
+  }
+
+  .hero-info {
+    padding: 18px;
+  }
+
+  .hero-info h3 {
+    font-size: 26px;
+  }
+
+  .hero-det {
+    font-size: 19px;
+  }
+
+  .website {
+    flex-wrap: wrap;
+    gap: 18px;
+  }
+
+  .website img {
+    height: 54px;
+  }
+
+  .links-bot {
+    min-height: 100px;
+    gap: 18px;
+  }
   background-color: black;
 }
 

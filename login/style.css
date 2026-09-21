@@ -63,3 +63,19 @@ button:hover {
 #message, #registerMessage {
   min-height: 20px;
 }
+
+@media (max-width: 480px) {
+  body {
+    padding: 16px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 420px;
+    padding: 24px 20px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+}
